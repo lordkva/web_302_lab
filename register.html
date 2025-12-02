@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація користувача</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ШАПКА */
+        header {
+            background-color: #42a5f5;
+            border-bottom: 2px solid #e64a19;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #000;
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .site-subtitle {
+            font-size: 14px;
+        }
+
+        .nav-right a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .nav-right a:hover {
+            text-decoration: underline;
+        }
+
+        /* ОСНОВНИЙ КОНТЕНТ */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 0;
+        }
+
+        .register-card {
+            width: 420px;
+            background-color: #ffffff;
+            border: 1px solid #d0d0d0;
+        }
+
+        .register-card-header {
+            background-color: #42a5f5;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .register-card-body {
+            padding: 20px 25px 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 14px;
+            border: 1px solid #cccccc;
+            border-radius: 2px;
+        }
+
+        .btn-row {
+            text-align: right;
+            margin-top: 10px;
+        }
+
+        .btn-submit {
+            padding: 8px 16px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* ПІДВАЛ */
+        footer {
+            background-color: #263238;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <div class="site-title">Мій особистий блог</div>
+        <div class="site-subtitle">Владислав Бабенко</div> <!-- поміняєш на своє ПІБ -->
+    </div>
+    <nav class="nav-right">
+        <a href="index.html">Вхід</a>
+        <a href="register.html">Реєстрація</a>
+    </nav>
+</header>
+
+<main>
+    <div class="register-card">
+        <div class="register-card-header">
+            Реєстрація користувача
+        </div>
+        <div class="register-card-body">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="surname">Прізвище</label>
+                    <input type="text" id="surname" name="surname">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="login">Логін</label>
+                    <input type="text" id="login" name="login">
+                </div>
+
+                <div class="form-group">
+                    <label for="group">Навчальна група</label>
+                    <select id="group" name="group">
+                        <option value="281">281</option>
+                        <option value="282">282</option>
+                        <option value="283">283</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="form-group">
+                    <label for="password2">Підтвердження паролю</label>
+                    <input type="password" id="password2" name="password2">
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit" class="btn-submit">Зареєструватись</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © Всі права захищені. Розробник: студент групи 302, Бабенко Михайло.
+</footer>
+
+</body>
+</html>
